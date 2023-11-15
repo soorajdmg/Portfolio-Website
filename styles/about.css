@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 800px;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+logotext {
+    height: 100px;
+    width: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin-left: 25px;
+}
+
+navbar {
+    background-image: url(../images/site-bg.jpg);
+    background-color: rgb(11, 11, 12);
+    background-size: 2500px;
+    height: 125px;
+    width: max-content;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 5px;
+}
+
+.sooraj-logo {
+    width: 100px;
+    margin-left: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+navoption {
+    margin-top: 35px;
+    margin-left: 900px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.home-text {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans';
+    transition: color 0.15s;
+}
+
+.home-text:hover {
+    color: rgb(14, 211, 255);
+    cursor: pointer;
+}
+
+.home-text:active {
+    opacity: 0.7;
+}
+
+.work-text {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans';
+    transition: color 0.15s;
+}
+
+.work-text:hover {
+    color: rgb(14, 211, 255);
+    cursor: pointer;
+}
+
+.work-text:active {
+    opacity: 0.7;
+}
+
+.about-text {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    color: rgb(14, 211, 255);
+    font-size: 20px;
+    font-family: 'Gill Sans';
+    transition: color 0.15s;
+}
+
+.about-text:hover {
+    color: rgb(14, 211, 255);
+    cursor: pointer;
+}
+
+.about-text:active {
+    opacity: 0.7;
+}
+
+main {
+    background-image: url(../images/site-bg.jpg);
+    background-color: rgb(11, 11, 12);
+    background-size: 2500px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme-heading {
+    color: rgb(14, 211, 255);
+    font-family: "Graphik";
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+.aboutme-text {
+    color: white;
+    font-family: 'graphik';
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 60px;
+    margin-left: 260px;
+    width: 1150px;
+    word-spacing: 3px;
+    line-height: 26px;
+}
+
+
+.sep-line {
+    height: 0.2px;
+    background-color: rgb(51, 51, 51);
+    border: 0;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-image: url(../images/site-bg.jpg);
+    background-color: rgb(11, 11, 12);
+    background-size: 2500px;
+    height: 200px;
+}
+
+.contact-bar {
+    position: relative;
+    top: -100px;
+    background-size: 2500px;
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.contact {
+    color: rgb(14, 211, 255);
+    font-size: 40px;
+    font-family: 'Graphik Semibold';
+    position: relative;
+    bottom: -50px;
+    margin-bottom: 0px;
+    margin-left: 140px;
+    cursor: default;
+}
+
+.contact-options {
+    position: relative;
+    bottom: -50px;
+    margin-left: 143px;
+    word-spacing: 15px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.github {
+    color: white;
+    text-decoration: none;
+    font-family: 'Graphik';
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.30s;
+}
+
+.github:hover {
+    color: rgb(14, 211, 255);
+}
+
+.instagram {
+    color: white;
+    text-decoration: none;
+    font-family: 'Graphik';
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.30s;
+}
+
+.instagram:hover {
+    color: rgb(14, 211, 255);
+}
+
+.email {
+    color: white;
+    text-decoration: none;
+    font-family: 'Graphik';
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.30s;
+}
+
+.email:hover {
+    color: rgb(14, 211, 255);
+}
+
+.resume {
+    color: white;
+    text-decoration: none;
+    font-family: 'Graphik';
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.30s;
+}
+
+.resume:hover {
+    color: rgb(14, 211, 255);
+}
+
+.copyright-text {
+    color: white;
+    opacity: 0.5;
+    width: fit-content;
+    text-decoration: none;
+    font-family: 'Graphik';
+    font-size: 15px;
+    margin-left: 1050px;
+}
