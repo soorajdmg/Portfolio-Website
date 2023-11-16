@@ -13,6 +13,24 @@ body {
 }
 
 @font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans.woff2') format('woff2'),
+        url('../fonts/GillSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans.woff2') format('woff2'),
+        url('../fonts/GillSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Graphik-Regular';
     src: url('../fonts/Graphik-Regular.woff2') format('woff2'),
         url('../fonts/Graphik-Regular.woff') format('woff');
@@ -29,6 +47,7 @@ body {
     font-style: normal;
     font-display: swap;
 }
+
 
 logotext {
     height: 100px;
@@ -56,18 +75,6 @@ navbar {
     width: 100px;
     margin-left: 35px;
     margin-top: 10px;
-    cursor: pointer;
-}
-
-.logo-text {
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
-    margin-left: 20px;
-    margin-top: 10px;
-    text-align: left;
-    font-family: 'Century Gothic';
-    font-size: larger;
     cursor: pointer;
 }
 
