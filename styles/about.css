@@ -12,6 +12,16 @@ body {
     user-select: none;
 }
 
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url(../fonts/Graphik-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Graphik-Semibold';
+    src: url(../fonts/Graphik-Semibold.otf);
+}
+
 logotext {
     height: 100px;
     width: 150px;
@@ -118,17 +128,17 @@ main {
 
 .aboutme-heading {
     color: rgb(14, 211, 255);
-    font-family: "Graphik";
+    font-family: "Graphik-Semibold";
     font-size: 50px;
     font-weight: bold;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 65px;
     margin-left: 200px;
 }
 
 .aboutme-text {
     color: white;
-    font-family: 'graphik';
+    font-family: 'Graphik-Regular';
     font-size: 18px;
     font-weight: normal;
     margin-top: 60px;
@@ -165,7 +175,7 @@ footer {
 .contact {
     color: rgb(14, 211, 255);
     font-size: 40px;
-    font-family: 'Graphik Semibold';
+    font-family: 'Graphik-Semibold';
     position: relative;
     bottom: -50px;
     margin-bottom: 0px;
@@ -185,7 +195,7 @@ footer {
 .github {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -198,7 +208,7 @@ footer {
 .instagram {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -211,7 +221,7 @@ footer {
 .email {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -224,7 +234,7 @@ footer {
 .resume {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -239,7 +249,7 @@ footer {
     opacity: 0.5;
     width: fit-content;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Regular';
     font-size: 15px;
     margin-left: 1050px;
 }

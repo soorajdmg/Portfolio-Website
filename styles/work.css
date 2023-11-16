@@ -12,6 +12,16 @@ body {
     user-select: none;
 }
 
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url(../fonts/Graphik-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Graphik-Semibold';
+    src: url(../fonts/Graphik-Semibold.otf);
+}
+
 logotext {
     height: 100px;
     width: 150px;
@@ -118,7 +128,7 @@ main {
 
 .personal-projects {
     color: rgb(14, 211, 255);
-    font-family: "Graphik";
+    font-family: "Graphik-Semibold";
     font-size: 50px;
     font-weight: bold;
     margin-top: 80px;
@@ -128,14 +138,14 @@ main {
 .projects {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: -500px;
 }
 
 .irctc-project {
     color: white;
     word-spacing: 2px;
-    font-family: "Graphik";
+    font-family: "Graphik-Regular";
     font-size: 25px;
     text-decoration: none;
     margin-top: 100px;
@@ -150,7 +160,7 @@ main {
 .irctc-brief {
     color: white;
     word-spacing: 2px;
-    font-family: "Graphik";
+    font-family: "Graphik-Regular";
     font-size: 16px;
     line-height: 23px;
     text-decoration: none;
@@ -162,7 +172,7 @@ main {
 .finance-project {
     color: white;
     word-spacing: 2px;
-    font-family: "Graphik";
+    font-family: "Graphik-Regular";
     font-size: 25px;
     text-decoration: none;
     margin-top: 50px;
@@ -177,7 +187,7 @@ main {
 .finance-brief {
     color: white;
     word-spacing: 2px;
-    font-family: "Graphik";
+    font-family: "Graphik-Regular";
     font-size: 16px;
     line-height: 23px;
     text-decoration: none;
@@ -189,7 +199,7 @@ main {
 .password-project {
     color: white;
     word-spacing: 2px;
-    font-family: "Graphik";
+    font-family: "Graphik-Regular";
     font-size: 25px;
     text-decoration: none;
     margin-top: 50px;
@@ -204,7 +214,7 @@ main {
 .password-brief {
     color: white;
     word-spacing: 2px;
-    font-family: "Graphik";
+    font-family: "Graphik-Regular";
     font-size: 16px;
     line-height: 23px;
     text-decoration: none;
@@ -240,7 +250,7 @@ footer {
 .contact {
     color: rgb(14, 211, 255);
     font-size: 40px;
-    font-family: 'Graphik Semibold';
+    font-family: 'Graphik-Semibold';
     position: relative;
     bottom: -50px;
     margin-bottom: 0px;
@@ -260,7 +270,7 @@ footer {
 .github {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -273,7 +283,7 @@ footer {
 .instagram {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -286,7 +296,7 @@ footer {
 .email {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -299,7 +309,7 @@ footer {
 .resume {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -314,7 +324,7 @@ footer {
     opacity: 0.5;
     width: fit-content;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Regular';
     font-size: 15px;
     margin-left: 1050px;
 }

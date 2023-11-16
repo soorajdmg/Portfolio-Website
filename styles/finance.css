@@ -12,6 +12,16 @@ body {
     user-select: none;
 }
 
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url(../fonts/Graphik-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Graphik-Semibold';
+    src: url(../fonts/Graphik-Semibold.otf);
+}
+
 logotext {
     height: 100px;
     width: 150px;
@@ -118,7 +128,7 @@ main {
 
 .finance-text {
     color: rgb(14, 211, 255);
-    font-family: "Graphik";
+    font-family: "Graphik-Semibold";
     font-size: 50px;
     font-weight: bold;
     margin-top: 80px;
@@ -149,7 +159,7 @@ main {
 
 .trivia-text {
     color: white;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 18px;
     margin-top: -46px;
     margin-left: 35px;
@@ -176,7 +186,7 @@ main {
     color: white;
     height: 35px;
     width: 300px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 35px;
     z-index: 2;
 }
@@ -185,7 +195,7 @@ main {
     color: white;
     height: fit-content;
     width: 700px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 20px;
     line-height: 33px;
     margin-top: 45px;
@@ -197,7 +207,7 @@ main {
     color: white;
     height: fit-content;
     width: 313px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 35px;
     z-index: 2;
 }
@@ -206,7 +216,7 @@ main {
     color: white;
     height: fit-content;
     width: 700px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 20px;
     margin-top: 45px;
 }
@@ -215,7 +225,7 @@ main {
     color: white;
     height: fit-content;
     width: 700px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 20px;
     margin-top: 20px;
 }
@@ -233,7 +243,7 @@ main {
     color: white;
     height: fit-content;
     width: fit-content;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 33px;
 }
 
@@ -243,7 +253,7 @@ main {
     width: 500px;
     word-spacing: 1px;
     line-height: 28px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 18px;
     margin-top: 35px;
 }
@@ -256,7 +266,7 @@ main {
     color: white;
     height: fit-content;
     width: fit-content;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 33px;
 }
 
@@ -266,7 +276,7 @@ main {
     width: 500px;
     word-spacing: 1px;
     line-height: 28px;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 18px;
     margin-top: 35px;
 }
@@ -293,7 +303,7 @@ main {
 .code-link {
     text-decoration: none;
     color: white;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 25px;
     transition: all 0.3s;
 }
@@ -316,7 +326,7 @@ main {
 .output-link {
     text-decoration: none;
     color: white;
-    font-family: "graphik";
+    font-family: "Graphik-Regular";
     font-size: 25px;
     transition: all 0.3s;
 
@@ -352,7 +362,7 @@ footer {
 .contact {
     color: rgb(14, 211, 255);
     font-size: 40px;
-    font-family: 'Graphik Semibold';
+    font-family: 'Graphik-Semibold';
     position: relative;
     bottom: -50px;
     margin-bottom: 0px;
@@ -372,7 +382,7 @@ footer {
 .github {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -385,7 +395,7 @@ footer {
 .instagram {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -398,7 +408,7 @@ footer {
 .email {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -411,7 +421,7 @@ footer {
 .resume {
     color: white;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
     transition: color 0.30s;
@@ -426,7 +436,7 @@ footer {
     opacity: 0.5;
     width: fit-content;
     text-decoration: none;
-    font-family: 'Graphik';
+    font-family: 'Graphik-Regular';
     font-size: 15px;
     margin-left: 1050px;
 }
