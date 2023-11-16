@@ -13,13 +13,14 @@ body {
 }
 
 @font-face {
-    font-family: 'GillSans';
+    font-family: 'Gill Sans';
     src: url('../fonts/GillSans.woff2') format('woff2'),
-        url('../fonts/GillSans.woff') format('woff');
+      url('../fonts/GillSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+  }
+  
 
 @font-face {
     font-family: 'Graphik-Regular';
@@ -83,7 +84,7 @@ navoption {
     text-decoration: none;
     color: rgb(14, 211, 255);
     font-size: 20px;
-    font-family: 'GillSans';
+    font-family: 'Gill Sans';
     transition: color 0.15s;
 }
 
@@ -102,7 +103,7 @@ navoption {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: 'GillSans';
+    font-family: 'Gill Sans';
     transition: color 0.15s;
 }
 
@@ -121,7 +122,7 @@ navoption {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: 'GillSans';
+    font-family: 'Gill Sans';
     transition: color 0.15s;
 }
 
