@@ -4,60 +4,73 @@
 <head>
     <title>Sooraj Murugaraj | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/index.js"></script>
     <link rel="stylesheet" href="styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="images/site-logo.png">
     <frame src="index.html" scrolling></frame>
 </head>
 
 <body>
-    <navbar>
-        <logotext>
-            <a href="index.html"><img class="sooraj-logo" src="images/sooraj-logo.png" draggable="false"></a>
-        </logotext>
-        <navoption>
-            <home>
-                <a class="home-text" href="index.html">Home</a>
-            </home>
-            <work>
-                <a class="work-text" href="pages/work.html">Work</a>
-            </work>
-            <about>
-                <a class="about-text" href="pages/about.html">About</a>
-            </about>
-        </navoption>
-    </navbar>
-    <main>
-        <img class="mainimage" src="images/main-img.png" draggable="false">
-        <text>
-            <p class="hello-text">
-                Hello!
-            </p>
-            <p class="intro-text">
-                I'm Sooraj,<br>an aspiring<br>Software Engineer!
-            </p>
-        </text>
-    </main>
-    <footer>
-        <hr class="sep-line">
-        <div class="contact-bar">
-            <p class="contact">Contact</p>
-            <div class="contact-options">
-                <a class="github" href="https://github.com/soorajdmg" target="_blank">
-                    GitHub
-                </a>
-                <a class="instagram" href="https://www.instagram.com/sooraj.dmg" target="_blank">
-                    Instagram
-                </a>
-                <a class="email" href="mailto:soorajmurugaraj@gmail.com" target="_blank">
-                    Email
-                </a>
-                <a class="resume" href="files/Sooraj Resume.pdf" target="_blank">
-                    Resume
-                </a>
+    <div class="site-wrapper">
+        <navbar>
+            <a class="sooraj-logo" href="index.html"><img class="soorajlogo-img" src="images/sooraj-logo.png"
+                    draggable="false"></a>
+            <navoption>
+                <home>
+                    <a class="home-text" href="index.html">Home</a>
+                </home>
+                <work>
+                    <a class="work-text" href="pages/work.html">Work</a>
+                </work>
+                <about>
+                    <a class="about-text" href="pages/about.html">About</a>
+                </about>
+            </navoption>
+            <div class="burger-menu">&#9776;</div>
+            <nav>
+                <ul>
+                    <li><a class="menu-home" href="index.html">Home</a></li>
+                    <li><a href="pages/work.html">Work</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                </ul>
+            </nav>
+        </navbar>
+        <main>
+            <div class="imgtext-wrapper">
+                <img class="mainimage" src="images/main-img.png" draggable="false">
+                <div class="maintext-wrapper">
+                    <p class="hello-text">
+                        Hello!
+                    </p>
+                    <p class="intro-text">
+                        I'm Sooraj,<br>an aspiring<br>Software Engineer!
+                    </p>
+                </div>
             </div>
-            <p class="copyright-text">&copy; 2023 Sooraj Murugaraj. All rights reserved.</p>
-        </div>
-    </footer>
+        </main>
+        <hr class="sep-line">
+        <footer>
+            <div class="contact-bar">
+                <p class="contact">Contact</p>
+                <div class="contact-options">
+                    <a class="github" href="https://github.com/soorajdmg" target="_blank">
+                        GitHub
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/sooraj.dmg" target="_blank">
+                        Instagram
+                    </a>
+                    <a class="email" href="mailto:soorajmurugaraj@gmail.com" target="_blank">
+                        Email
+                    </a>
+                    <a class="resume" href="files/Sooraj Resume.pdf" target="_blank">
+                        Resume
+                    </a>
+                </div>
+                <p class="copyright-text">&copy; 2023 Sooraj Murugaraj. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
