@@ -143,12 +143,6 @@ navoption {
     opacity: 0.7;
 }
 
-.ri-menu-4-fill {
-    font-size: 1.5vw;
-    height: fit-content;
-    display: none;
-}
-
 .burger-menu {
     display: none;
     margin: 55px 15px 0 40px;
@@ -395,28 +389,36 @@ footer {
         color: rgb(14, 211, 255);
     }
 
-    .ri-menu-4-fill {
-        font-size: 4vh;
-        font-weight: 300;
-        height: fit-content;
+    .burger-menu {
+        color: #ffffff;
         margin-top: 50px;
         margin-right: 40px;
         display: block;
         cursor: pointer;
-        position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
-    .burger-menu {
-        font-size: 4vh;
-        font-weight: 300;
-        height: fit-content;
-        margin-top: 50px;
-        margin-right: 40px;
+    .bar {
         display: block;
-        cursor: pointer;
-        position: relative;
-        z-index: 2;
+        height: 2.8px;
+        width: 25px;
+        border-radius: 10px;
+        margin: 6.5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    .burger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger-menu.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
     }
 
     main {
