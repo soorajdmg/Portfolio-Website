@@ -349,20 +349,23 @@ footer {
     }
 
     nav {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: fixed;
         margin-top: -70px;
+        left: 100%;
         top: 70px;
         height: 100vh;
         width: 100vw;
-        backdrop-filter: blur(50px);
+        background-image: url(../images/site-bg.jpg);
+        background-size: 1565px;
         z-index: 1;
+        -webkit-transition: left 0.3s ease;
+        transition: all 0.3s ease;
     }
 
     nav.active {
-        display: flex;
-        outline: none;
+        left: 0;
     }
 
 
