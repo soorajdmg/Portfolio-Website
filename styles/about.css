@@ -4,7 +4,10 @@
 }
 
 body {
-    height: 800px;
+    background-image: url(../images/site-bg.jpg);
+    background-color: rgb(11, 11, 12);
+    background-size: cover;
+    min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
     -webkit-user-select: none;
@@ -39,41 +42,31 @@ body {
     font-display: swap;
 }
 
-logotext {
-    height: 100px;
-    width: 150px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    margin-left: 25px;
-}
-
 navbar {
-    background-image: url(../images/site-bg.jpg);
-    background-color: rgb(11, 11, 12);
-    background-size: 2500px;
-    height: 125px;
-    width: max-content;
-    display: grid;
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 5px;
 }
 
 .sooraj-logo {
-    width: 100px;
-    margin-left: 35px;
-    margin-top: 10px;
+    margin-left: 4vmax;
+    margin-top: 1vmax;
+    width: fit-content;
+}
+
+.soorajlogo-img {
+    width: 6.5vmax;
     cursor: pointer;
 }
 
 navoption {
-    margin-top: 35px;
-    margin-left: 900px;
+    margin-top: 2.25vmax;
+    margin-right: 5.6vmax;
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+    gap: 0.65vmax;
 }
 
 .home-text {
@@ -81,7 +74,7 @@ navoption {
     width: auto;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-family: 'Gill Sans';
     transition: color 0.15s;
 }
@@ -100,7 +93,7 @@ navoption {
     width: auto;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-family: 'Gill Sans';
     transition: color 0.15s;
 }
@@ -119,7 +112,7 @@ navoption {
     width: auto;
     text-decoration: none;
     color: rgb(14, 211, 255);
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-family: 'Gill Sans';
     transition: color 0.15s;
 }
@@ -133,36 +126,53 @@ navoption {
     opacity: 0.7;
 }
 
+.burger-menu {
+    display: none;
+    margin: 55px 15px 0 40px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+nav {
+    display: none;
+}
+
 main {
-    background-image: url(../images/site-bg.jpg);
-    background-color: rgb(11, 11, 12);
-    background-size: 2500px;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 2vmax;
 }
 
 .aboutme-heading {
     color: rgb(14, 211, 255);
     font-family: "Graphik-Semibold";
-    font-size: 50px;
+    font-size: 3.3vmax;
     font-weight: bold;
-    width: 100%;
-    margin-top: 65px;
-    margin-left: 200px;
+    margin-top: 2vmax;
+    margin-left: 12vmax;
 }
 
 .aboutme-text {
     color: white;
     font-family: 'Graphik-Regular';
-    font-size: 18px;
+    font-size: 1.19vw;
     font-weight: normal;
-    margin-top: 60px;
-    margin-left: 260px;
-    width: 1150px;
-    word-spacing: 3px;
-    line-height: 26px;
+    margin-top: 2.2vw;
+    margin-left: 16vw;
+    width: 72vw;
+    word-spacing: 0.15vw;
+    line-height: 1.7vw;
 }
 
 
@@ -170,51 +180,45 @@ main {
     height: 0.2px;
     background-color: rgb(51, 51, 51);
     border: 0;
-    margin-bottom: 100px;
 }
 
 footer {
-    background-image: url(../images/site-bg.jpg);
-    background-color: rgb(11, 11, 12);
-    background-size: 2500px;
-    height: 200px;
+    min-height: 100%;
+    min-width: 100%;
+    margin-top: 3vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
 }
 
 .contact-bar {
-    position: relative;
-    top: -100px;
-    background-size: 2500px;
-    height: 200px;
-    margin-top: 0px;
-    margin-bottom: 100px;
+    width: fit-content;
+    margin-bottom: 3vmax;
+    margin-left: 9vmax;
 }
 
 .contact {
     color: rgb(14, 211, 255);
-    font-size: 40px;
+    font-size: 2.65vmax;
     font-family: 'Graphik-Semibold';
     position: relative;
-    bottom: -50px;
-    margin-bottom: 0px;
-    margin-left: 140px;
-    cursor: default;
+    padding-bottom: 1.75vmax;
 }
 
 .contact-options {
+    width: fit-content;
     position: relative;
-    bottom: -50px;
-    margin-left: 143px;
-    word-spacing: 15px;
-    margin-top: 25px;
-    margin-bottom: 0px;
 }
 
 .github {
     color: white;
+    width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
+    font-size: 1vmax;
     cursor: pointer;
-    font-weight: bold;
+    margin-right: 1vmax;
     transition: color 0.30s;
 }
 
@@ -224,10 +228,12 @@ footer {
 
 .instagram {
     color: white;
+    width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1vmax;
+    margin-right: 1vmax;
     transition: color 0.30s;
 }
 
@@ -237,10 +243,12 @@ footer {
 
 .email {
     color: white;
+    width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1vmax;
+    margin-right: 1vmax;
     transition: color 0.30s;
 }
 
@@ -250,10 +258,12 @@ footer {
 
 .resume {
     color: white;
+    width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1vmax;
+    margin-right: 1vmax;
     transition: color 0.30s;
 }
 
@@ -264,9 +274,241 @@ footer {
 .copyright-text {
     color: white;
     opacity: 0.5;
-    width: fit-content;
-    text-decoration: none;
     font-family: 'Graphik-Regular';
-    font-size: 15px;
-    margin-left: 1050px;
+    width: fit-content;
+    font-size: 1vmax;
+    margin-left: 61vmax;
+    margin-top: -4vmax;
+    position: absolute;
+}
+
+/* verySmallScreens (Mobile) */
+@media screen and (max-width: 550px) {
+    body.no-scroll {
+        overflow: hidden;
+    }
+
+    navbar {
+        min-height: 100%;
+        min-width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sooraj-logo {
+        width: 70px;
+        margin: 55px 0 0 40px;
+    }
+
+    .soorajlogo-img {
+        width: 100%;
+    }
+
+    navoption {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-top: -70px;
+        left: 100%;
+        top: 70px;
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../images/site-bg.jpg);
+        background-size: 1565px;
+        z-index: 1;
+        -webkit-transition: left 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 150px auto auto 15vmin;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li a {
+        height: auto;
+        width: auto;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans';
+    }
+
+    .menu-about {
+        color: rgb(14, 211, 255);
+    }
+
+    .burger-menu {
+        color: #ffffff;
+        margin-top: 50px;
+        margin-right: 40px;
+        display: block;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .bar {
+        display: block;
+        height: 2.8px;
+        width: 25px;
+        border-radius: 10px;
+        margin: 6.5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    .burger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger-menu.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    main {
+        min-height: 80vh;
+        min-width: 100vw;
+    }
+
+    .aboutme-heading {
+        color: rgb(14, 211, 255);
+        font-family: "Graphik-Semibold";
+        font-size: 4.25vmax;
+        font-weight: bold;
+        margin-top: 10vmax;
+        margin-left: 5vmax;
+    }
+    
+    .aboutme-text {
+        color: white;
+        font-family: 'Graphik-Regular';
+        font-size: 1.45vmax;
+        font-weight: normal;
+        margin-top: 2.2vw;
+        margin-left: 10vmax;
+        width: 72vw;
+        word-spacing: 0.1vmax;
+        line-height: 2vmax;
+    }
+
+    .sep-line {
+        height: 0.2px;
+        background-color: rgb(51, 51, 51);
+        border: 0;
+    }
+
+    footer {
+        min-height: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        position: relative;
+    }
+
+    .contact-bar {
+        margin-top: 4.5vmax;
+        margin-bottom: 4vmax;
+        margin-left: 10vmax;
+    }
+
+    .contact {
+        color: rgb(14, 211, 255);
+        font-size: 4.6vmax;
+        font-family: 'Graphik-Semibold';
+        position: relative;
+        padding-bottom: 3vmax;
+    }
+
+    .contact-options {
+        width: fit-content;
+        position: relative;
+        margin-bottom: 2vmax;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.75vmax;
+    }
+
+    .github {
+        color: white;
+        text-decoration: none;
+        font-family: 'Graphik-Semibold';
+        cursor: pointer;
+        font-size: 2.25vmax;
+        font-weight: bold;
+    }
+
+    .github:hover {
+        color: inherit;
+    }
+
+    .instagram {
+        color: white;
+        text-decoration: none;
+        font-family: 'Graphik-Semibold';
+        cursor: pointer;
+        font-size: 2.25vmax;
+        font-weight: bold;
+    }
+
+    .instagram:hover {
+        color: inherit;
+    }
+
+    .email {
+        color: white;
+        height: max-content;
+        width: fit-content;
+        text-decoration: none;
+        font-family: 'Graphik-Semibold';
+        cursor: pointer;
+        font-size: 2.25vmax;
+        font-weight: bold;
+    }
+
+    .email:hover {
+        color: inherit;
+    }
+
+    .resume {
+        color: white;
+        width: fit-content;
+        text-decoration: none;
+        font-family: 'Graphik-Semibold';
+        cursor: pointer;
+        font-size: 2.25vmax;
+        font-weight: bold;
+    }
+
+    .resume:hover {
+        color: inherit;
+    }
+
+    .copyright-text {
+        display: none;
+    }
 }
