@@ -68,22 +68,22 @@ navbar {
 }
 
 .sooraj-logo {
-    margin-left: 35px;
-    margin-top: 10px;
-    width: 100px;
+    margin-left: 4vmax;
+    margin-top: 1vmax;
+    width: fit-content;
 }
 
 .soorajlogo-img {
-    width: 100px;
+    width: 6.5vmax;
     cursor: pointer;
 }
 
 navoption {
-    margin-top: 35px;
-    margin-right: 80px;
+    margin-top: 2.25vmax;
+    margin-right: 5.6vmax;
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+    gap: 0.65vmax;
 }
 
 .home-text {
@@ -91,7 +91,7 @@ navoption {
     width: auto;
     text-decoration: none;
     color: rgb(14, 211, 255);
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-family: 'Gill Sans';
     transition: color 0.15s;
 }
@@ -110,7 +110,7 @@ navoption {
     width: auto;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-family: 'Gill Sans';
     transition: color 0.15s;
 }
@@ -129,7 +129,7 @@ navoption {
     width: auto;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-family: 'Gill Sans';
     transition: color 0.15s;
 }
@@ -206,7 +206,7 @@ main {
     text-align: left;
     font-size: 6vmin;
     font-family: 'Arial';
-    margin-top: 20px;
+    margin-top: 1vmax;
     margin-left: 50px;
 }
 
@@ -242,15 +242,16 @@ footer {
 .contact-options {
     width: fit-content;
     position: relative;
-    word-spacing: 15px;
 }
 
 .github {
     color: white;
+    width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
+    margin-right: 1.25vmax;
     transition: color 0.30s;
 }
 
@@ -260,10 +261,12 @@ footer {
 
 .instagram {
     color: white;
+    width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
+    margin-right: 1.25vmax;
     transition: color 0.30s;
 }
 
@@ -273,12 +276,12 @@ footer {
 
 .email {
     color: white;
-    height: max-content;
     width: fit-content;
     text-decoration: none;
     font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
+    margin-right: 1.25vmax;
     transition: color 0.30s;
 }
 
@@ -293,6 +296,7 @@ footer {
     font-family: 'Graphik-Semibold';
     cursor: pointer;
     font-weight: bold;
+    margin-right: 1.25vmax;
     transition: color 0.30s;
 }
 
@@ -304,6 +308,7 @@ footer {
     color: white;
     opacity: 0.5;
     font-family: 'Graphik-Regular';
+    width: fit-content;
     font-size: 15px;
     margin-left: 61vmax;
     margin-top: -60px;
@@ -403,7 +408,7 @@ footer {
         height: 2.8px;
         width: 25px;
         border-radius: 10px;
-        margin: 6.5px;
+        margin: 6.5px; 
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         z-index: 1;
@@ -478,7 +483,6 @@ footer {
     footer {
         min-height: 100%;
         min-width: 100%;
-        padding-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -486,25 +490,24 @@ footer {
     }
 
     .contact-bar {
-        padding-bottom: 40px;
         margin-left: 10vmax;
     }
 
     .contact {
         color: rgb(14, 211, 255);
-        font-size: 32px;
+        font-size: 4.6vmax;
         font-family: 'Graphik-Semibold';
         position: relative;
-        padding-bottom: 20px;
+        padding-bottom: 3vmax;
     }
 
     .contact-options {
         width: fit-content;
         position: relative;
-        word-spacing: 15px;
+        margin-bottom: 2vmax;
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 1.75vmax;
     }
 
     .github {
@@ -512,8 +515,8 @@ footer {
         text-decoration: none;
         font-family: 'Graphik-Semibold';
         cursor: pointer;
+        font-size: 2.25vmax;
         font-weight: bold;
-        transition: color 0.30s;
     }
 
     .github:hover {
@@ -525,8 +528,8 @@ footer {
         text-decoration: none;
         font-family: 'Graphik-Semibold';
         cursor: pointer;
+        font-size: 2.25vmax;
         font-weight: bold;
-        transition: color 0.30s;
     }
 
     .instagram:hover {
@@ -540,8 +543,8 @@ footer {
         text-decoration: none;
         font-family: 'Graphik-Semibold';
         cursor: pointer;
+        font-size: 2.25vmax;
         font-weight: bold;
-        transition: color 0.30s;
     }
 
     .email:hover {
@@ -554,6 +557,7 @@ footer {
         text-decoration: none;
         font-family: 'Graphik-Semibold';
         cursor: pointer;
+        font-size: 2.25vmax;
         font-weight: bold;
     }
 

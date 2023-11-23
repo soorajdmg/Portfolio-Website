@@ -3,6 +3,8 @@
 
 <head>
     <title>Sooraj Murugaraj | Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/work.js"></script>
     <link rel="stylesheet" href="../styles/work.css">
     <link rel="icon" href="../images/site-logo.png">
     <frame src="about.html" scrolling></frame>
@@ -10,9 +12,8 @@
 
 <body>
     <navbar>
-        <logotext>
-            <a href="../index.html"><img class="sooraj-logo" src="../images/sooraj-logo.png" draggable="false"></a>
-        </logotext>
+        <a class="sooraj-logo" href="../index.html"><img class="soorajlogo-img" src="../images/sooraj-logo.png"
+                draggable="false"></a>
         <navoption>
             <home>
                 <a class="home-text" href="../index.html">Home</a>
@@ -24,6 +25,18 @@
                 <a class="about-text" href="about.html">About</a>
             </about>
         </navoption>
+        <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menu-home" href="../index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </navbar>
     <main>
         <p class="personal-projects">Personal Projects</p>
@@ -32,34 +45,34 @@
                 IRCTC eTicket Booking Portal
             </a>
             <a class="irctc-brief" href="irctc.html" target="_blank">
-                IRCTC eTicket Booking Portal is a simple and efficient Python-based application made to <br>
-                book train tickets, order food, locate the trains, cancel the already booked tickets, and <br>
-                also do inquiries about the PNR number of your booked tickets of the Indian Railways. <br>
-                The frontend is made using Python and the backend is made using MySQL. <br>
+                IRCTC eTicket Booking Portal is a simple and efficient Python-based application made to
+                book train tickets, order food, locate the trains, cancel the already booked tickets, and
+                also do inquiries about the PNR number of your booked tickets of the Indian Railways.
+                The frontend is made using Python and the backend is made using MySQL.
             </a>
             <a class="finance-project" href="finance.html" target="_blank">
                 Finance Tracker
             </a>
             <a class="finance-brief" href="finance.html" target="_blank">
-                Finance Tracker is a personal project I developed to manage and track my own finances <br>
-                effectively. It uses Google Sheets for data visualization, making it easier to track income, <br>
-                expenses, and budgets. This project underscores my skills in data analysis, application <br>
+                Finance Tracker is a personal project I developed to manage and track my own finances
+                effectively. It uses Google Sheets for data visualization, making it easier to track income,
+                expenses, and budgets. This project underscores my skills in data analysis, application
                 development, and personal finance management.
             </a>
             <a class="password-project" href="password.html" target="_blank">
                 Password Manager
             </a>
-            <a class="password-brief" href="">
-                Password Manager is my inaugural Windows application, designed with a strong focus on <br>
-                security and user-friendliness. It empowers users to efficiently organize and protect <br>
-                their passwords and sensitive data. With strong encryption, seamless password generation, <br>
-                and an intuitive interface, it simplifies password management, making it an ideal choice <br>
+            <a class="password-brief" href="password.html">
+                Password Manager is my inaugural Windows application, designed with a strong focus on
+                security and user-friendliness. It empowers users to efficiently organize and protect
+                their passwords and sensitive data. With strong encryption, seamless password generation,
+                and an intuitive interface, it simplifies password management, making it an ideal choice
                 for my first Windows app.
             </a>
         </div>
     </main>
+    <hr class="sep-line">
     <footer>
-        <hr class="sep-line">
         <div class="contact-bar">
             <p class="contact">Contact</p>
             <div class="contact-options">
@@ -72,7 +85,7 @@
                 <a class="email" href="mailto:soorajmurugaraj@gmail.com" target="_blank">
                     Email
                 </a>
-                <a class="resume" href="../files/Sooraj Resume.pdf" target="_blank">
+                <a class="resume" href="files/Sooraj Resume.pdf" target="_blank">
                     Resume
                 </a>
             </div>
@@ -80,5 +93,4 @@
         </div>
     </footer>
 </body>
-
 </html>
