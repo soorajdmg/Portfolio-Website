@@ -3,8 +3,9 @@
 
 <head>
     <title>Sooraj Murugaraj | Work</title>
-    <link rel="stylesheet" href="../styles/irctc.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/irctc.js"></script>
+    <link rel="stylesheet" href="../styles/irctc.css">
     <script src="https://kit.fontawesome.com/820f810df4.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../images/site-logo.png">
     <frame src="irctc.html" scrolling></frame>
@@ -12,11 +13,8 @@
 
 <body>
     <navbar>
-        <logotext>
-            <a href="../index.html">
-                <img class="sooraj-logo" src="../images/sooraj-logo.png" draggable="false">
-            </a>
-        </logotext>
+        <a class="sooraj-logo" href="../index.html"><img class="soorajlogo-img" src="../images/sooraj-logo.png"
+                draggable="false"></a>
         <navoption>
             <home>
                 <a class="home-text" href="../index.html">Home</a>
@@ -28,26 +26,40 @@
                 <a class="about-text" href="about.html">About</a>
             </about>
         </navoption>
+        <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menu-home" href="../index.html">Home</a></li>
+                <li><a class="menu-work" href="work.html">Work</a></li>
+                <li><a class="menu-about" href="about.html">About</a></li>
+            </ul>
+        </nav>
     </navbar>
     <main>
         <p class="irctc-text">IRCTC eTicket Booking Portal</p>
-        <div class="trainimg-wrapper">
-            <div class="train-img"></div>
-            <p class="trivia-text">
-                <b> Trivia: </b> I developed this project at the age of 17.
-            </p>
-        </div>
-        <div class="maintext-wrapper">
-            <p class="projectoverview-text">Project Overview</p>
-            <p class="project-overview">
-                The IRCTC eTicket Booking Portal is a Python-based web application <br>
-                that offers a comprehensive solution for all your Indian Railways ticketing <br>
-                needs. It simplifies and enriches the process of booking, managing, and <br>
-                enhancing your train journey experience.
-            </p>
-            <p class="techused-text">Technologies Used</p>
-            <p class="tech-used1">&bull; Python</p>
-            <p class="tech-used2">&bull; MySQL</p>
+        <div class="main-content">
+            <div class="trainimg-wrapper">
+                <div class="train-img"></div>
+                <p class="trivia-text">
+                    <b> Trivia: </b> I developed this project at the age of 17.
+                </p>
+            </div>
+            <div class="maintext-wrapper">
+                <p class="projectoverview-text">Project Overview</p>
+                <p class="project-overview">
+                    The IRCTC eTicket Booking Portal is a Python-based web application <br>
+                    that offers a comprehensive solution for all your Indian Railways ticketing <br>
+                    needs. It simplifies and enriches the process of booking, managing, and <br>
+                    enhancing your train journey experience.
+                </p>
+                <p class="techused-text">Technologies Used</p>
+                <p class="tech-used1">&bull; Python</p>
+                <p class="tech-used2">&bull; MySQL</p>
+            </div>
         </div>
         <d class="subtext-wrapper">
             <div class="challengetext-wrapper">
@@ -90,8 +102,8 @@
             </div>
         </div>
     </main>
+    <hr class="sep-line">
     <footer>
-        <hr class="sep-line">
         <div class="contact-bar">
             <p class="contact">Contact</p>
             <div class="contact-options">

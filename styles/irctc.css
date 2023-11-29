@@ -4,7 +4,10 @@
 }
 
 body {
-  height: 800px;
+  background-image: url(../images/site-bg.jpg);
+  background-color: rgb(11, 11, 12);
+  background-size: cover;
+  min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
   -webkit-user-select: none;
@@ -39,41 +42,31 @@ body {
   font-display: swap;
 }
 
-logotext {
-  height: 100px;
-  width: 150px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
-  margin-left: 25px;
-}
-
 navbar {
-  background-image: url(../images/site-bg.jpg);
-  background-color: rgb(11, 11, 12);
-  background-size: 2500px;
-  height: 125px;
-  width: max-content;
-  display: grid;
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: 1fr 2fr 1fr;
-  column-gap: 5px;
 }
 
 .sooraj-logo {
-  width: 100px;
-  margin-left: 35px;
-  margin-top: 10px;
+  margin-left: 4vmax;
+  margin-top: 1vmax;
+  width: fit-content;
+}
+
+.soorajlogo-img {
+  width: 6.5vmax;
   cursor: pointer;
 }
 
 navoption {
-  margin-top: 35px;
-  margin-left: 900px;
+  margin-top: 2.25vmax;
+  margin-right: 5.6vmax;
   display: grid;
   grid-template-columns: auto;
-  gap: 10px;
+  gap: 0.65vmax;
 }
 
 .home-text {
@@ -81,7 +74,7 @@ navoption {
   width: auto;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 1.3vmax;
   font-family: 'Gill Sans';
   transition: color 0.15s;
 }
@@ -100,7 +93,7 @@ navoption {
   width: auto;
   text-decoration: none;
   color: rgb(14, 211, 255);
-  font-size: 20px;
+  font-size: 1.3vmax;
   font-family: 'Gill Sans';
   transition: color 0.15s;
 }
@@ -119,7 +112,7 @@ navoption {
   width: auto;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 1.3vmax;
   font-family: 'Gill Sans';
   transition: color 0.15s;
 }
@@ -133,33 +126,64 @@ navoption {
   opacity: 0.7;
 }
 
+.burger-menu {
+  display: none;
+  margin: 55px 15px 0 40px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+nav {
+  display: none;
+}
+
 main {
-  background-image: url(../images/site-bg.jpg);
-  background-color: rgb(11, 11, 12);
-  background-size: 2500px;
-  height: 1300px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  min-height: 80vw;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vmax;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
 }
 
 .irctc-text {
   color: rgb(14, 211, 255);
   font-family: "Graphik-Semibold";
-  font-size: 50px;
+  font-size: 3.25vmax;
   font-weight: bold;
-  margin-top: 80px;
-  margin-left: 200px;
+  margin-top: 3vmax;
+  margin-left: 13vmax;
+  margin-bottom: 3.5vmax;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.25vmax;
 }
 
 .trainimg-wrapper {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  height: 475px;
-  width: 625px;
-  margin-top: 225px;
-  margin-left: -1350px;
+  height: 30.5vmax;
+  width: 40vmax;
+  margin-left: 6.7vmax;
 }
 
 .train-img {
@@ -177,9 +201,9 @@ main {
 .trivia-text {
   color: white;
   font-family: "Graphik-Regular";
-  font-size: 18px;
-  margin-top: -46px;
-  margin-left: 35px;
+  font-size: 1.15vmax;
+  margin-top: -8%;
+  margin-left: 5.5%;
   filter: blur(0.004px);
   opacity: 0;
   transition: opacity 0.5s;
@@ -194,66 +218,67 @@ main {
 }
 
 .maintext-wrapper {
-  margin-top: -560px;
-  margin-left: 750px;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .projectoverview-text {
   color: white;
-  height: 35px;
-  width: 300px;
+  width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 35px;
+  font-size: 2.3vmax;
   z-index: 2;
+  margin-top: 0.5vmax;
+  margin-bottom: 2.75vmax;
 }
 
 .project-overview {
   color: white;
-  height: fit-content;
-  width: 700px;
+  width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 20px;
-  line-height: 33px;
-  margin-top: 45px;
-  margin-bottom: 60px;
+  font-size: 1.3vmax;
+  line-height: 2.15vmax;
   z-index: 1;
+  margin-bottom: 4.25vmax;
 }
 
 .techused-text {
   color: white;
-  height: fit-content;
-  width: 313px;
+  width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 35px;
+  font-size: 2.3vmax;
   z-index: 2;
+  margin-bottom: 2.75vmax;
 }
 
 .tech-used1 {
   color: white;
-  height: fit-content;
-  width: 700px;
+  width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 20px;
-  margin-top: 45px;
+  font-size: 1.3vmax;
+  margin-bottom: 1.25vmax;
 }
 
 .tech-used2 {
   color: white;
-  height: fit-content;
-  width: 700px;
+  width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 1.3vmax;
 }
 
 .subtext-wrapper {
   display: flex;
-  margin-left: -1350px;
+  flex-direction: row;
+  gap: 12vmax;
+  margin-top: 4.5vmax;
+  margin-left: 11vmax;
 }
 
 .challengetext-wrapper {
-  margin-left: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.45vmax;
 }
 
 .challenge-text {
@@ -261,22 +286,22 @@ main {
   height: fit-content;
   width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 33px;
+  font-size: 2.2vmax;
 }
 
 .challenge {
   color: white;
-  height: fit-content;
-  width: 500px;
-  word-spacing: 1px;
-  line-height: 28px;
+  width: 32.8vmax;
+  word-spacing: 0.06vmax;
+  line-height: 1.8vmax;
   font-family: "Graphik-Regular";
-  font-size: 18px;
-  margin-top: 35px;
+  font-size: 1.17vmax;
 }
 
 .impacttext-wrapper {
-  margin-left: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.45vmax;
 }
 
 .impact-text {
@@ -284,32 +309,30 @@ main {
   height: fit-content;
   width: fit-content;
   font-family: "Graphik-Regular";
-  font-size: 33px;
+  font-size: 2.2vmax;
 }
 
 .impact {
   color: white;
   height: fit-content;
-  width: 500px;
-  word-spacing: 1px;
-  line-height: 28px;
+  width: 32vmax;
+  word-spacing: 0.06vmax;
+  line-height: 1.8vmax;
   font-family: "Graphik-Regular";
-  font-size: 18px;
-  margin-top: 35px;
+  font-size: 1.17vmax;
 }
 
 .linkstext-wrapper {
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: -100px;
+  flex-direction: row;
+  gap: 15vmax;
+  margin-top: 3vmax;
+  margin-left: 27vmax;
 }
 
 .codelink-wrapper {
   cursor: pointer;
   width: fit-content;
-
 }
 
 .linkicon1 {
@@ -321,8 +344,7 @@ main {
   text-decoration: none;
   color: white;
   font-family: "Graphik-Regular";
-  font-size: 25px;
-  transition: all 0.3s;
+  font-size: 1.62vmax;
 }
 
 .code-link:hover {
@@ -331,7 +353,6 @@ main {
 
 .outputlink-wrapper {
   cursor: pointer;
-  margin-left: 250px;
 
 }
 
@@ -344,8 +365,7 @@ main {
   text-decoration: none;
   color: white;
   font-family: "Graphik-Regular";
-  font-size: 25px;
-  transition: all 0.3s;
+  font-size: 1.62vmax;
 
 }
 
@@ -357,51 +377,45 @@ main {
   height: 0.2px;
   background-color: rgb(51, 51, 51);
   border: 0;
-  margin-bottom: 100px;
 }
 
 footer {
-  background-image: url(../images/site-bg.jpg);
-  background-color: rgb(11, 11, 12);
-  background-size: 2500px;
-  height: 200px;
+  min-height: 100%;
+  min-width: 100%;
+  margin-top: 3vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
 }
 
 .contact-bar {
-  position: relative;
-  top: -100px;
-  background-size: 2500px;
-  height: 200px;
-  margin-top: 0px;
-  margin-bottom: 100px;
+  width: fit-content;
+  margin-bottom: 3vmax;
+  margin-left: 9vmax;
 }
 
 .contact {
   color: rgb(14, 211, 255);
-  font-size: 40px;
+  font-size: 2.65vmax;
   font-family: 'Graphik-Semibold';
   position: relative;
-  bottom: -50px;
-  margin-bottom: 0px;
-  margin-left: 140px;
-  cursor: default;
+  padding-bottom: 1.75vmax;
 }
 
 .contact-options {
+  width: fit-content;
   position: relative;
-  bottom: -50px;
-  margin-left: 143px;
-  word-spacing: 15px;
-  margin-top: 25px;
-  margin-bottom: 0px;
 }
 
 .github {
   color: white;
+  width: fit-content;
   text-decoration: none;
   font-family: 'Graphik-Semibold';
+  font-size: 1vmax;
   cursor: pointer;
-  font-weight: bold;
+  margin-right: 1vmax;
   transition: color 0.30s;
 }
 
@@ -411,10 +425,12 @@ footer {
 
 .instagram {
   color: white;
+  width: fit-content;
   text-decoration: none;
   font-family: 'Graphik-Semibold';
   cursor: pointer;
-  font-weight: bold;
+  font-size: 1vmax;
+  margin-right: 1vmax;
   transition: color 0.30s;
 }
 
@@ -424,10 +440,12 @@ footer {
 
 .email {
   color: white;
+  width: fit-content;
   text-decoration: none;
   font-family: 'Graphik-Semibold';
   cursor: pointer;
-  font-weight: bold;
+  font-size: 1vmax;
+  margin-right: 1vmax;
   transition: color 0.30s;
 }
 
@@ -437,10 +455,12 @@ footer {
 
 .resume {
   color: white;
+  width: fit-content;
   text-decoration: none;
   font-family: 'Graphik-Semibold';
   cursor: pointer;
-  font-weight: bold;
+  font-size: 1vmax;
+  margin-right: 1vmax;
   transition: color 0.30s;
 }
 
@@ -451,9 +471,423 @@ footer {
 .copyright-text {
   color: white;
   opacity: 0.5;
-  width: fit-content;
-  text-decoration: none;
   font-family: 'Graphik-Regular';
-  font-size: 15px;
-  margin-left: 1050px;
+  width: fit-content;
+  font-size: 1vmax;
+  margin-left: 61vmax;
+  margin-top: -4vmax;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  navbar {
+    min-height: 100%;
+    min-width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sooraj-logo {
+    width: 70px;
+    margin: 55px 0 0 40px;
+  }
+
+  .soorajlogo-img {
+    width: 100%;
+  }
+
+  navoption {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: -70px;
+    left: 100%;
+    top: 70px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/site-bg.jpg);
+    background-color: rgb(11, 11, 12);
+    background-size: 1565px;
+    z-index: 3;
+    -webkit-transition: left 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 150px auto auto 15vmin;
+  }
+
+  nav ul li {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li a {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans';
+  }
+
+  .menu-work {
+    color: rgb(14, 211, 255);
+  }
+
+  .burger-menu {
+    color: #ffffff;
+    margin-top: 50px;
+    margin-right: 40px;
+    display: block;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  .bar {
+    display: block;
+    height: 2.8px;
+    width: 25px;
+    border-radius: 10px;
+    margin: 6.5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  main {
+    min-height: 1vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .irctc-text {
+    color: rgb(14, 211, 255);
+    font-family: "Graphik-Semibold";
+    font-size: 6.25vw;
+    font-weight: bold;
+    width: 80vw;
+    margin: 0;
+    margin-top: 10vmax;
+    margin-bottom: 2vmax;
+    }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+  }
+
+  .trainimg-wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    height: 40vh;
+    width: 82vw;
+    margin: 0;
+  }
+
+  .train-img {
+    background-size: cover;
+    border-radius: 10px;
+    filter: brightness(0.55);
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    cursor: default;
+  }
+
+  .trivia-text {
+    color: white;
+    font-size: 2.5vw;
+    margin-top: -8%;
+    margin-left: 5.5%;
+    filter: blur(0.004px);
+    opacity: 0.6;
+  }
+
+  .maintext-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .projectoverview-text {
+    color: white;
+    width: fit-content;
+    font-size: 2.5vmax;
+    z-index: 2;
+    margin-top: 0.5vmax;
+    margin-bottom: 2.75vmax;
+  }
+
+  .project-overview {
+    color: white;
+    width: fit-content;
+    font-size: 1.3vmax;
+    line-height: 2.15vmax;
+    z-index: 1;
+    margin-bottom: 4.25vmax;
+  }
+
+  .techused-text {
+    color: white;
+    width: fit-content;
+    font-size: 2.5vmax;
+    z-index: 2;
+    margin-bottom: 2.75vmax;
+  }
+
+  .tech-used1 {
+    color: white;
+    width: fit-content;
+    font-size: 1.3vmax;
+    margin-bottom: 1.25vmax;
+  }
+
+  .tech-used2 {
+    color: white;
+    width: fit-content;
+    font-family: "Graphik-Regular";
+    font-size: 1.3vmax;
+  }
+
+  .subtext-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+    margin: 0;
+    margin-top: 2vmax;
+    gap: 2vmax;
+    
+  }
+
+  .challengetext-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .challenge-text {
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    font-family: "Graphik-Regular";
+    font-size: 2.2vmax;
+  }
+
+  .challenge {
+    color: white;
+    width: 82vw;
+    word-spacing: 0.06vmax;
+    line-height: 1.8vmax;
+    font-family: "Graphik-Regular";
+    font-size: 1.17vmax;
+    margin-bottom: 2vmax;
+  }
+
+  .impacttext-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .impact-text {
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    font-family: "Graphik-Regular";
+    font-size: 2.2vmax;
+  }
+
+  .impact {
+    color: white;
+    height: fit-content;
+    width: 76vw;
+    word-spacing: 0.06vmax;
+    line-height: 1.8vmax;
+    font-family: "Graphik-Regular";
+    font-size: 1.17vmax;
+  }
+
+  .linkstext-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15vmax;
+    margin: 0;
+    margin-top: 5vmax;
+    margin-bottom: 5vmax;
+  }
+
+  .codelink-wrapper {
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .linkicon1 {
+    color: white;
+    text-decoration: none;
+  }
+
+  .code-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Graphik-Regular";
+    font-size: 1.62vmax;
+  }
+
+  .code-link:hover {
+    text-decoration: underline;
+  }
+
+  .outputlink-wrapper {
+    cursor: pointer;
+
+  }
+
+  .linkicon2 {
+    color: white;
+    text-decoration: none;
+  }
+
+  .output-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Graphik-Regular";
+    font-size: 1.62vmax;
+
+  }
+
+  .output-link:hover {
+    text-decoration: underline;
+  }
+
+  .sep-line {
+    height: 0.2px;
+    background-color: rgb(51, 51, 51);
+    border: 0;
+  }
+
+  footer {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+  }
+
+  .contact-bar {
+    margin-top: 4.5vmax;
+    margin-bottom: 4vmax;
+    margin-left: 10vmax;
+  }
+
+  .contact {
+    color: rgb(14, 211, 255);
+    font-size: 4.6vmax;
+    font-family: 'Graphik-Semibold';
+    position: relative;
+    padding-bottom: 3vmax;
+  }
+
+  .contact-options {
+    width: fit-content;
+    position: relative;
+    margin-bottom: 2vmax;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.75vmax;
+  }
+
+  .github {
+    color: white;
+    text-decoration: none;
+    font-family: 'Graphik-Semibold';
+    cursor: pointer;
+    font-size: 2.25vmax;
+    font-weight: bold;
+  }
+
+  .github:hover {
+    color: white;
+  }
+
+  .instagram {
+    color: white;
+    text-decoration: none;
+    font-family: 'Graphik-Semibold';
+    cursor: pointer;
+    font-size: 2.25vmax;
+    font-weight: bold;
+  }
+
+  .instagram:hover {
+    color: white;
+  }
+
+  .email {
+    color: white;
+    height: max-content;
+    width: fit-content;
+    text-decoration: none;
+    font-family: 'Graphik-Semibold';
+    cursor: pointer;
+    font-size: 2.25vmax;
+    font-weight: bold;
+  }
+
+  .email:hover {
+    color: white;
+  }
+
+  .resume {
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+    font-family: 'Graphik-Semibold';
+    cursor: pointer;
+    font-size: 2.25vmax;
+    font-weight: bold;
+  }
+
+  .resume:hover {
+    color: white;
+  }
+
+  .copyright-text {
+    display: none;
+  }
 }
