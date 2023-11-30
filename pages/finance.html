@@ -3,6 +3,8 @@
 
 <head>
     <title>Sooraj Murugaraj | Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/finance.js"></script>
     <link rel="stylesheet" href="../styles/finance.css">
     <script src="https://kit.fontawesome.com/820f810df4.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../images/site-logo.png">
@@ -11,11 +13,8 @@
 
 <body>
     <navbar>
-        <logotext>
-            <a href="../index.html">
-                <img class="sooraj-logo" src="../images/sooraj-logo.png" draggable="false">
-            </a>
-        </logotext>
+        <a class="sooraj-logo" href="../index.html"><img class="soorajlogo-img" src="../images/sooraj-logo.png"
+                draggable="false"></a>
         <navoption>
             <home>
                 <a class="home-text" href="../index.html">Home</a>
@@ -27,57 +26,66 @@
                 <a class="about-text" href="about.html">About</a>
             </about>
         </navoption>
+        <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menu-home" href="../index.html">Home</a></li>
+                <li><a class="menu-work" href="work.html">Work</a></li>
+                <li><a class="menu-about" href="about.html">About</a></li>
+            </ul>
+        </nav>
     </navbar>
     <main>
         <p class="finance-text">Finance Tracker</p>
-        <div class="moneyimg-wrapper">
-            <div class="money-img"></div>
-            <p class="trivia-text">
-                <b> Trivia: </b> I developed this project at the age of 17.
-            </p>
-        </div>
-        <div class="maintext-wrapper">
-            <p class="projectoverview-text">Project Overview</p>
-            <p class="project-overview">
-                The Finance Tracker is a robust Python-based application meticulously crafted to empower users in
-                managing their financial transactions effectively. This personal finance tool offers a comprehensive
-                solution for tracking income, monitoring expenditures, and gaining insights into financial trends.
-            </p>
-            <p class="techused-text">Technologies Used</p>
-            <p class="tech-used1">&bull; Python</p>
+        <div class="main-content">
+            <div class="moneyimg-wrapper">
+                <div class="money-img"></div>
+                <p class="trivia-text">
+                    <b> Trivia: </b> This was my first project integrating an external API.
+                </p>
+            </div>
+            <div class="maintext-wrapper">
+                <p class="projectoverview-text">Project Overview</p>
+                <p class="project-overview">
+                    The Finance Tracker is a robust Python-based application meticulously crafted to empower users in
+                    managing their financial transactions effectively. This personal finance tool offers a comprehensive
+                    solution for tracking income, monitoring expenditures, and gaining insights into financial trends.
+                </p>
+                <p class="techused-text">Technologies Used</p>
+                <p class="tech-used1">&bull; Python</p>
+            </div>
         </div>
         <d class="subtext-wrapper">
             <div class="challengetext-wrapper">
-                <p class="challenge-text">Data Storage Challenge</p>
+                <p class="challenge-text">Technical Challenge</p>
                 <p class="challenge">
-                    A distinctive feature of this project is the integration of a wide range of data storage methods,
-                    which
-                    encompass MySQL, text, binary, and CSV files. This added layer of complexity has introduced an
-                    element
-                    of enjoyment and challenge to me. The utilization of various data storage techniques not only
-                    enriches
-                    the project's technical depth but also showcases my proficiency in data management and storage.
+                    Overcoming the intricacies of real-time synchronization between the Finance Tracker and Google
+                    Sheets presented a complex technical challenge, demanding meticulous data handling and robust
+                    integration solutions. For the challenging task of real-time synchronization between the Finance
+                    Tracker and Google Sheets, the solution involved implementing a robust API-based communication
+                    protocol.
                 </p>
             </div>
             <div class="impacttext-wrapper">
                 <p class="impact-text">Project Impact</p>
                 <p class="impact">
-                    The IRCTC eTicket Booking Portal aims to simplify the train travel experience by providing an
-                    all-in-one solution for ticketing, travel planning, and in-train dining. It demonstrates that fun
-                    and challenge can be seamlessly integrated into user-centric applications.
+                    The Finance Tracker project has significantly influenced users by providing an intuitive and
+                    insightful financial management tool. The application fosters financial awareness and efficiency.
+                    Its impact extends beyond transaction tracking, promoting financial well-being through customizable
+                    features and visualizations that inspire users to achieve their financial goals with confidence.
                 </p>
             </div>
         </d>
         <div class="linkstext-wrapper">
             <div class="codelink-wrapper">
-                <a target="_blank"
-                    href=""
-                    class="linkicon1" text-decoration="none">
+                <a target="_blank" href="" class="linkicon1" text-decoration="none">
                     <i class="fa-solid fa-link fa-lg"></i>
                 </a>
-                <a target="_blank"
-                    href=""
-                    class="code-link">Source Code</a>
+                <a target="_blank" href="" class="code-link">Source Code</a>
             </div>
             <div class="outputlink-wrapper">
                 <a target="_blank" href="" class="linkicon2" text-decoration="none">
@@ -87,8 +95,8 @@
             </div>
         </div>
     </main>
+    <hr class="sep-line">
     <footer>
-        <hr class="sep-line">
         <div class="contact-bar">
             <p class="contact">Contact</p>
             <div class="contact-options">
